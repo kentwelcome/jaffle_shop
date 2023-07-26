@@ -24,3 +24,4 @@ jobs:
         upload: true
         share: true
         modified: true
+        piperider_version: v0.29.3-rc.1
