@@ -17,9 +17,11 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: PipeRider Compare
-      uses: InfuseAI/piperider-compare-action@v1
+      uses: InfuseAI/piperider-compare-action@v1.2.0-beta.2
       with:
         cloud_api_token: ${{ secrets.PIPERIDER_CLOUD_TOKEN_ID }}
         cloud_project: ${{ secrets.PIPERIDER_API_PROJECT }}
         upload: true
-        share: true      
+        share: true
+        piperider_version: v1.2.0-rc.1
+        modified: true
